@@ -43,6 +43,6 @@ def get_content(bsObj, ID):
     return [ s.strip() for s in content_list ]
 
 if __name__ == '__main__':
-    url = 'http://www.maybank2u.com.my/WebBank/my-travel.html'
+    url = 'http://www.maybank2u.com.my/WebBank/my-dining.html'
     soup = get_page(url)
     print(get_content(soup, get_id(soup)))
